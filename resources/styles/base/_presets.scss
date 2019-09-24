@@ -1,0 +1,92 @@
+// -----------------------------------------------------------------------------
+// Presets
+// Based on Bootstrap
+//
+// - Font settings
+// - Template colors
+// - Template settings
+// - Grid settings
+// -----------------------------------------------------------------------------
+
+// --------------------------------------------------------------- Font settings
+$primary-font-light: "OpenSans Light", sans-serif !default;
+$primary-font-regular: "OpenSans Regular", sans-serif !default;
+$primary-font-bold: "OpenSans Bold", sans-serif !default;
+
+$font-size-base:        16 !default;
+$line-height-base:      24 !default;
+$small-font-size:       80% !default;
+
+$h1-font-size:          $font-size-base * 2.5 !default;
+$h2-font-size:          $font-size-base * 2 !default;
+$h3-font-size:          $font-size-base * 1.75 !default;
+$h4-font-size:          $font-size-base * 1.5 !default;
+$h5-font-size:          $font-size-base * 1.25 !default;
+$h6-font-size:          $font-size-base !default;
+
+// ----------------------------------------------------------- Template settings
+$print-styles:      true !default;
+$sizing-classes:    true !default;
+$text-classes:      true !default;
+$spacing-classes:   true !default;
+$flex-classes:      true !default;
+
+// Spacers for margin and padding classes
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 3)
+) !default;
+
+// Sizes map for `.h-*` and `.w-*` classes.
+$sizes: (
+  25: 25%,
+  50: 50%,
+  75: 75%,
+  100: 100%,
+  auto: auto
+) !default;
+
+// ---------------------------------------------- embed-responsive-aspect-ratios
+
+$embed-responsive-aspect-ratios: () !default;
+$embed-responsive-aspect-ratios: join(
+(
+  (21 9),
+  (16 9),
+  (3 4),
+  (1 1),
+), $embed-responsive-aspect-ratios
+);
+
+// --------------------------------------------------------------------- z-index
+$z-index-dropdown:          1000 !default;
+$z-index-sticky:            1020 !default;
+$z-index-fixed:             1030 !default;
+$z-index-modal-backdrop:    1040 !default;
+$z-index-modal:             1050 !default;
+$z-index-popover:           1060 !default;
+$z-index-tooltip:           1070 !default;
+
+// --------------------------------------------------------------- Grid settings
+$grid-columns:             12 !default; // Number of columns
+$grid-gutter-width:        30px !default; // Space between columns
+
+$grid-breakpoints: (   // Breakpoints for media queries
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+$container-max-widths: (   // Container max widths
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+) !default;
